@@ -7,15 +7,15 @@ package com.github.b1412.generator.metadata
 @Target(AnnotationTarget.CLASS)
 @Repeatable // use Kotlin annotation as well just to be safe (for tools and stuff)
 annotation class MenuFeature(
-        val parentName: String = "",
-        val name: String = "",
-        val sort: Int = 0,
-        val disable: Boolean = false,
-        val queryParams: String = "",
-        val fieldNames: Array<String> = [""],
-        val columns: Array<ColumnFeature> = [],
-        val actionItems: Array<String> = [],
-        val toolbarItems: Array<String> = []
+    val parentName: String = "",
+    val name: String = "",
+    val sort: Int = 0,
+    val disable: Boolean = false,
+    val queryParams: String = "",
+    val fieldNames: Array<String> = [""],
+    val columns: Array<ColumnFeature> = [],
+    val actionItems: Array<String> = [],
+    val toolbarItems: Array<String> = []
 )
 
 /** Container annotation for repeating without repeatable support */

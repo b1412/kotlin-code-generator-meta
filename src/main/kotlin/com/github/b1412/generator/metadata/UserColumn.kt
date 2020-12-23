@@ -7,8 +7,8 @@ package com.github.b1412.generator.metadata
 @Target(AnnotationTarget.CLASS)
 @Repeatable // use Kotlin annotation as well just to be safe (for tools and stuff)
 annotation class UserColumn(
-        val name: String = "",
-        val columnFeatures: Array<ColumnFeature>
+    val name: String = "",
+    val columnFeatures: Array<ColumnFeature>
 )
 
 /** Container annotation for repeating without repeatable support */

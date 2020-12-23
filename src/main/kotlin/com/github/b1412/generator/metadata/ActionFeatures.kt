@@ -7,26 +7,26 @@ package com.github.b1412.generator.metadata
 @Target(AnnotationTarget.CLASS)
 @Repeatable // use Kotlin annotation as well just to be safe (for tools and stuff)
 annotation class ActionItemFeature(
-        val display: String,
-        val icon: String = "fa-caret-right",
-        val target: String = "_self",
+    val display: String,
+    val icon: String = "fa-caret-right",
+    val target: String = "_self",
 
-        val confirmTitle: String = "",
-        val confirmMessage: String = "",
+    val confirmTitle: String = "",
+    val confirmMessage: String = "",
 
-        val modalName: String = "",
-        val modalPlaceholder: String = "",
-        val modalNoteFieldName: String = "modalNote",
-        val httpMethod: String,
-        val url: String,
-        val permissionName: String
+    val modalName: String = "",
+    val modalPlaceholder: String = "",
+    val modalNoteFieldName: String = "modalNote",
+    val httpMethod: String,
+    val url: String,
+    val permissionName: String
 )
 
 /** Container annotation for repeating without repeatable support */
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.CLASS)
 annotation class ActionFeatures(
-        vararg val value: ActionItemFeature,
-        val showDelete: Boolean = true,
-        val showEdit: Boolean = true
+    vararg val value: ActionItemFeature,
+    val showDelete: Boolean = true,
+    val showEdit: Boolean = true
 )

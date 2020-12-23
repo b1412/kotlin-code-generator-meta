@@ -6,8 +6,8 @@ package com.github.b1412.generator.metadata
 @Target(AnnotationTarget.CLASS)
 @Repeatable
 annotation class CssFeature(
-        val condition: String = "",
-        val cssClass: String = ""
+    val condition: String = "",
+    val cssClass: String = ""
 )
 
 
